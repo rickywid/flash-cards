@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/flash-cards/static/css/main.b29db122.css",
+    "main.js": "/flash-cards/static/js/main.a0d1a418.js",
+    "static/js/787.28035159.chunk.js": "/flash-cards/static/js/787.28035159.chunk.js",
+    "static/media/bg-2.jpg": "/flash-cards/static/media/bg-2.38d48ba3219a5c13e3f3.jpg",
+    "index.html": "/flash-cards/index.html",
+    "main.b29db122.css.map": "/flash-cards/static/css/main.b29db122.css.map",
+    "main.a0d1a418.js.map": "/flash-cards/static/js/main.a0d1a418.js.map",
+    "787.28035159.chunk.js.map": "/flash-cards/static/js/787.28035159.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b29db122.css",
+    "static/js/main.a0d1a418.js"
+  ]
+}
