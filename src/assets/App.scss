@@ -1,0 +1,690 @@
+.App {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 5rem 0;
+}
+
+main {
+    min-height: calc(100vh - 50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+}
+
+.wrapper {
+    position: relative;
+    margin: 4rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.results {
+    font-size: 8rem;
+    text-align: center;
+
+    .results-summary {
+        margin-top: 5rem;
+        font-size: 48px;
+
+        div:first-child {
+            margin-bottom: 5rem;
+        }
+        
+        h2 {
+            text-align: initial;
+            font-size: 80px;
+            text-shadow:
+                0 0 7px #fff,
+                0 0 10px #fff,
+                0 0 21px #bc13fe,
+                0 0 42px #bc13fe,
+                0 0 0px #bc13fe,
+                0 0 0px #bc13fe,
+                0 0 0px #bc13fe,
+                0 0 0px #bc13fe;
+        }
+
+        p {
+            text-align: left;
+            text-shadow:
+                0 0 7px #fff,
+                0 0 10px #fff,
+                0 0 21px #fff,
+                0 0 42px #fff,
+                0 0 0px #fff,
+                0 0 0px #fff,
+                0 0 0px #fff,
+                0 0 0px #fff;
+        }
+    }
+
+    ul {
+        width: 90%;
+    }
+}
+
+.deck {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.deck-description {
+    flex: 1;
+}
+
+.deck-placeholder {
+    width: 300px;
+    font-size: 50px;
+    border-radius: 2rem;
+    font-weight: bold;
+    line-height: 1;
+    flex: 2;
+    text-align: center;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.header {
+    display: flex;
+    margin: 0 auto;
+    width: 50%;
+    flex-direction: column;
+    padding: 0.4em;
+    padding-top: 2rem;
+
+    &:after {
+        content: '';
+        margin: 0 auto;
+        margin-top: 2rem;
+        width: 30%;
+        border: 0.2rem solid #fff;
+        border-radius: 2rem;
+        box-shadow: 0 0 .2rem #fff,
+            0 0 .2rem #fff,
+            0 0 2rem #bc13fe,
+            0 0 0.8rem #bc13fe,
+            0 0 2.8rem #bc13fe,
+            inset 0 0 1.3rem #bc13fe;
+    }
+
+    .header-img {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 3rem;
+
+        div {
+            height: 150px;
+            width: 100px;
+            border: 0.5rem solid #fff;
+            border-radius: 2rem;
+
+        }
+
+        div:first-child {
+            transform: rotate(-20deg);
+            box-shadow: 0 0 .2rem #fff,
+                0 0 .2rem #fff,
+                0 0 2rem #90fe13,
+                0 0 0.8rem #90fe13,
+                0 0 2.8rem #90fe13,
+                inset 0 0 1.3rem #90fe13;
+        }
+
+        div:nth-child(2) {
+            margin-top: -20px;
+            box-shadow: 0 0 .2rem #fff,
+                0 0 .2rem #fff,
+                0 0 2rem #06c1ff,
+                0 0 0.8rem #06c1ff,
+                0 0 2.8rem #06c1ff,
+                inset 0 0 1.3rem #06c1ff;
+        }
+
+        div:last-child {
+            transform: rotate(20deg);
+            box-shadow: 0 0 .2rem #fff,
+                0 0 .2rem #fff,
+                0 0 2rem #fe1b13,
+                0 0 0.8rem #fe1b13,
+                0 0 2.8rem #fe1b13,
+                inset 0 0 1.3rem #fe1b13;
+        }
+    }
+}
+
+h1 {
+    color: #fff;
+    font-size: 100px;
+    text-align: center;
+    line-height: 1;
+    animation: pulsate-header 1.5s infinite alternate;
+    margin: 0;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #bc13fe,
+        0 0 82px #bc13fe,
+        0 0 92px #bc13fe,
+        0 0 102px #bc13fe,
+        0 0 151px #bc13fe;
+}
+
+h2 {
+    text-align: center;
+    font-size: 8rem;
+    margin: 0;
+    margin-bottom: 3rem;
+}
+
+h3 {
+    font-size: 4rem;
+    text-align: center;
+    margin: 0;
+}
+
+@keyframes pulsate-header {
+
+    100% {
+        text-shadow:
+            0 0 4px #fff,
+            0 0 11px #fff,
+            0 0 19px #fff,
+            0 0 40px #bc13fe,
+            0 0 80px #bc13fe,
+            0 0 90px #bc13fe,
+            0 0 100px #bc13fe,
+            0 0 150px #bc13fe;
+    }
+
+    0% {
+
+        text-shadow:
+            0 0 2px #fff,
+            0 0 4px #fff,
+            0 0 6px #fff,
+            0 0 10px #bc13fe,
+            0 0 45px #bc13fe,
+            0 0 55px #bc13fe,
+            0 0 70px #bc13fe,
+            0 0 80px #bc13fe;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.deck-placeholder.JS {
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #FFF,
+        0 0 82px #FFF,
+        0 0 92px #FFF,
+        0 0 102px #FFF,
+        0 0 151px #FFF;
+
+    &:hover {
+        animation: pulsate-JS 1.5s infinite alternate;
+        text-shadow:
+            0 0 7px #fff,
+            0 0 10px #fff,
+            0 0 21px #fff,
+            0 0 42px #6EDCD9,
+            0 0 82px #6EDCD9,
+            0 0 92px #6EDCD9,
+            0 0 102px #6EDCD9,
+            0 0 151px #6EDCD9;
+    }
+}
+
+.deck-placeholder.OOP {
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #FFF,
+        0 0 82px #FFF,
+        0 0 92px #FFF,
+        0 0 102px #FFF,
+        0 0 151px #FFF;
+
+    &:hover {
+        animation: pulsate-OOP 1.5s infinite alternate;
+        text-shadow:
+            0 0 7px #fff,
+            0 0 10px #fff,
+            0 0 21px #fff,
+            0 0 42px #DBFF3D,
+            0 0 82px #DBFF3D,
+            0 0 92px #DBFF3D,
+            0 0 102px #DBFF3D,
+            0 0 151px #DBFF3D;
+    }
+}
+
+.deck-placeholder.AL {
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #FFF,
+        0 0 82px #FFF,
+        0 0 92px #FFF,
+        0 0 102px #FFF,
+        0 0 151px #FFF;
+
+    &:hover {
+        animation: pulsate-AL 1.5s infinite alternate;
+        text-shadow:
+            0 0 7px #fff,
+            0 0 10px #fff,
+            0 0 21px #fff,
+            0 0 42px #EF2F88,
+            0 0 82px #EF2F88,
+            0 0 92px #EF2F88,
+            0 0 102px #EF2F88,
+            0 0 151px #EF2F88;
+
+    }
+}
+
+.deck-placeholder.BE {
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #FFF,
+        0 0 82px #FFF,
+        0 0 92px #FFF,
+        0 0 102px #FFF,
+        0 0 151px #FFF;
+
+    &:hover {
+        animation: pulsate-BE 1.5s infinite alternate;
+        text-shadow:
+            0 0 7px #fff,
+            0 0 10px #fff,
+            0 0 21px #fff,
+            0 0 42px #06FF00,
+            0 0 82px #06FF00,
+            0 0 92px #06FF00,
+            0 0 102px #06FF00,
+            0 0 151px #06FF00;
+    }
+}
+
+.deck-placeholder.WE {
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #FFF,
+        0 0 82px #FFF,
+        0 0 92px #FFF,
+        0 0 102px #FFF,
+        0 0 151px #FFF;
+
+    &:hover {
+        animation: pulsate-WE 1.5s infinite alternate;
+        text-shadow:
+            0 0 7px #fff,
+            0 0 10px #fff,
+            0 0 21px #fff,
+            0 0 42px #FF9D76,
+            0 0 82px #FF9D76,
+            0 0 92px #FF9D76,
+            0 0 102px #FF9D76,
+            0 0 151px #FF9D76;
+    }
+}
+
+.deck-placeholder.DS {
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #FFF,
+        0 0 82px #FFF,
+        0 0 92px #FFF,
+        0 0 102px #FFF,
+        0 0 151px #FFF;
+
+    &:hover {
+        animation: pulsate-DS 1.5s infinite alternate;
+        text-shadow:
+            0 0 7px #fff,
+            0 0 10px #fff,
+            0 0 21px #fff,
+            0 0 42px #BC6FF1,
+            0 0 82px #BC6FF1,
+            0 0 92px #BC6FF1,
+            0 0 102px #BC6FF1,
+            0 0 151px #BC6FF1;
+    }
+}
+
+.deck-placeholder.DO {
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #FFF,
+        0 0 82px #FFF,
+        0 0 92px #FFF,
+        0 0 102px #FFF,
+        0 0 151px #FFF;
+
+    &:hover {
+        animation: pulsate-DO 1.5s infinite alternate;
+        text-shadow:
+            0 0 7px #fff,
+            0 0 10px #fff,
+            0 0 21px #fff,
+            0 0 42px #80FFDB,
+            0 0 82px #80FFDB,
+            0 0 92px #80FFDB,
+            0 0 102px #80FFDB,
+            0 0 151px #80FFDB;
+    }
+}
+
+.deck-placeholder.DB {
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #FFF,
+        0 0 82px #FFF,
+        0 0 92px #FFF,
+        0 0 102px #FFF,
+        0 0 151px #FFF;
+
+    &:hover {
+        animation: pulsate-DB 1.5s infinite alternate;
+        text-shadow:
+            0 0 7px #fff,
+            0 0 10px #fff,
+            0 0 21px #fff,
+            0 0 42px #FF9A00,
+            0 0 82px #FF9A00,
+            0 0 92px #FF9A00,
+            0 0 102px #FF9A00,
+            0 0 151px #FF9A00;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes pulsate-JS {
+
+    100% {
+        text-shadow:
+            0 0 4px #fff,
+            0 0 11px #fff,
+            0 0 19px #fff,
+            0 0 40px #6EDCD9,
+            0 0 80px #6EDCD9,
+            0 0 90px #6EDCD9,
+            0 0 100px #6EDCD9,
+            0 0 150px #6EDCD9;
+    }
+
+    0% {
+
+        text-shadow:
+            0 0 2px #fff,
+            0 0 4px #fff,
+            0 0 6px #fff,
+            0 0 10px #6EDCD9,
+            0 0 45px #6EDCD9,
+            0 0 55px #6EDCD9,
+            0 0 70px #6EDCD9,
+            0 0 80px #6EDCD9;
+    }
+}
+
+@keyframes pulsate-OOP {
+
+    100% {
+        text-shadow:
+            0 0 4px #fff,
+            0 0 11px #fff,
+            0 0 19px #fff,
+            0 0 40px #DBFF3D,
+            0 0 80px #DBFF3D,
+            0 0 90px #DBFF3D,
+            0 0 100px #DBFF3D,
+            0 0 150px #DBFF3D;
+    }
+
+    0% {
+
+        text-shadow:
+            0 0 2px #fff,
+            0 0 4px #fff,
+            0 0 6px #fff,
+            0 0 10px #DBFF3D,
+            0 0 45px #DBFF3D,
+            0 0 55px #DBFF3D,
+            0 0 70px #DBFF3D,
+            0 0 80px #DBFF3D;
+    }
+}
+
+@keyframes pulsate-AL {
+
+    100% {
+        text-shadow:
+            0 0 4px #fff,
+            0 0 11px #fff,
+            0 0 19px #fff,
+            0 0 40px #EF2F88,
+            0 0 80px #EF2F88,
+            0 0 90px #EF2F88,
+            0 0 100px #EF2F88,
+            0 0 150px #EF2F88;
+    }
+
+    0% {
+
+        text-shadow:
+            0 0 2px #fff,
+            0 0 4px #fff,
+            0 0 6px #fff,
+            0 0 10px #EF2F88,
+            0 0 45px #EF2F88,
+            0 0 55px #EF2F88,
+            0 0 70px #EF2F88,
+            0 0 80px #EF2F88;
+    }
+}
+
+@keyframes pulsate-BE {
+
+    100% {
+        text-shadow:
+            0 0 4px #fff,
+            0 0 11px #fff,
+            0 0 19px #fff,
+            0 0 40px #06FF00,
+            0 0 80px #06FF00,
+            0 0 90px #06FF00,
+            0 0 100px #06FF00,
+            0 0 150px #06FF00;
+    }
+
+    0% {
+        text-shadow:
+            0 0 2px #fff,
+            0 0 4px #fff,
+            0 0 6px #fff,
+            0 0 10px #06FF00,
+            0 0 45px #06FF00,
+            0 0 55px #06FF00,
+            0 0 70px #06FF00,
+            0 0 80px #06FF00;
+    }
+}
+
+@keyframes pulsate-WE {
+
+    100% {
+        text-shadow:
+            0 0 4px #fff,
+            0 0 11px #fff,
+            0 0 19px #fff,
+            0 0 40px #FF9D76,
+            0 0 80px #FF9D76,
+            0 0 90px #FF9D76,
+            0 0 100px #FF9D76,
+            0 0 150px #FF9D76;
+    }
+
+    0% {
+
+        text-shadow:
+            0 0 2px #fff,
+            0 0 4px #fff,
+            0 0 6px #fff,
+            0 0 10px #FF9D76,
+            0 0 45px #FF9D76,
+            0 0 55px #FF9D76,
+            0 0 70px #FF9D76,
+            0 0 80px #FF9D76;
+    }
+}
+
+@keyframes pulsate-DS {
+
+    100% {
+        text-shadow:
+            0 0 4px #fff,
+            0 0 11px #fff,
+            0 0 19px #fff,
+            0 0 40px #EF2F88,
+            0 0 80px #EF2F88,
+            0 0 90px #EF2F88,
+            0 0 100px #EF2F88,
+            0 0 150px #EF2F88;
+    }
+
+    0% {
+        text-shadow:
+            0 0 2px #fff,
+            0 0 4px #fff,
+            0 0 6px #fff,
+            0 0 10px #EF2F88,
+            0 0 45px #EF2F88,
+            0 0 55px #EF2F88,
+            0 0 70px #EF2F88,
+            0 0 80px #EF2F88;
+    }
+}
+
+@keyframes pulsate-DO {
+
+    100% {
+        text-shadow:
+            0 0 4px #fff,
+            0 0 11px #fff,
+            0 0 19px #fff,
+            0 0 40px #80FFDB,
+            0 0 80px #80FFDB,
+            0 0 90px #80FFDB,
+            0 0 100px #80FFDB,
+            0 0 150px #80FFDB;
+    }
+
+    0% {
+        text-shadow:
+            0 0 2px #fff,
+            0 0 4px #fff,
+            0 0 6px #fff,
+            0 0 10px #80FFDB,
+            0 0 45px #80FFDB,
+            0 0 55px #80FFDB,
+            0 0 70px #80FFDB,
+            0 0 80px #80FFDB;
+    }
+}
+
+@keyframes pulsate-DB {
+
+    100% {
+        text-shadow:
+            0 0 4px #fff,
+            0 0 11px #fff,
+            0 0 19px #fff,
+            0 0 40px #FF9A00,
+            0 0 80px #FF9A00,
+            0 0 90px #FF9A00,
+            0 0 100px #FF9A00,
+            0 0 150px #FF9A00;
+    }
+
+    0% {
+        text-shadow:
+            0 0 2px #fff,
+            0 0 4px #fff,
+            0 0 6px #fff,
+            0 0 10px #FF9A00,
+            0 0 45px #FF9A00,
+            0 0 55px #FF9A00,
+            0 0 70px #FF9A00,
+            0 0 80px #FF9A00;
+    }
+}

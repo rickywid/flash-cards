@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Sacramento:400');
+
+body {
+  height: 100vh;
+  margin: 0;
+  background-image: url('./assets/bg-2.jpg');
+  background-size: cover;
+  color: white;
+  font-family: "Sacramento", sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+
+  li {
+    list-style: none;
+  }
+}
+
+p {
+  margin: 0;
+}
+
+.neon {
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #FFF,
+    0 0 82px #FFF,
+    0 0 92px #FFF,
+    0 0 102px #FFF,
+    0 0 151px #FFF;
+}
+
+.results.end {
+  font-size: 44px;
+  border: 0.3rem solid #fff;
+  border-radius: 1.5rem;
+  padding: 0.1em 2rem;
+  display: inline-block;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #fff,
+    0 0 82px #fff,
+    0 0 92px #fff,
+    0 0 102px #fff,
+    0 0 151px #fff;
+  box-shadow: 0 0 .2rem #fff,
+    0 0 .2rem #fff,
+    0 0 2rem #bc13fe,
+    0 0 0.8rem #bc13fe,
+    0 0 2.8rem #bc13fe,
+    inset 0 0 1.3rem #bc13fe;
+
+    &:hover {
+      cursor: pointer;
+      text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #bc13fe,
+      0 0 42px #bc13fe,
+      0 0 82px #bc13fe,
+      0 0 92px #bc13fe,
+      0 0 102px #bc13fe,
+      0 0 151px #bc13fe;
+    }
+}
